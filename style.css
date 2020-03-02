@@ -1,32 +1,55 @@
-html {
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
     background-image : url("grey background.jpg") !important;
   }
 
-.nav {
-    margin: 30px !important;
-    position: fixed;
-    width: 100%;
-}
-
-.navbar-nav {
-    font: grey;
-}
-
-.navbar-nav {
-text-align: right;
-}
-
-.navbar-brand {
+h1 {
     float: left;
     background-color: #59AAA5;
     color: white;
     font-size: 55px;
     text-align: center;
     font-family: Georgia;
+    margin-left: 10;
+    padding: 20px;
+ 
+}
+.navbar {
+    text-align: right;
+    margin-top: 20px;
+    color: grey !important;  
+    background: white;
+}
+
+.header {
+    border-bottom: 3px solid grey;
+    margin-bottom: 35px;
+    color: white;
+}
+
+#TiffanyPicture {
+    margin: 15px 15px 15px 15px;
+    float: left;
+}
+
+#aboutmebox {
+    float: left;
+}
+
+.card {
+    padding-top: 20px;
 }
 
 p {
     text-align: left;
+    padding-left: 20px;
+    color: grey;
 }
 
 hr {
@@ -49,7 +72,7 @@ button {
     padding: 5px 35px !important;
 }
 
-.footer {
+footer {
     border-top: 10px solid #59AAA5;
     position: fixed;
     text-align: center;
