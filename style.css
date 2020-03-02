@@ -1,24 +1,62 @@
-header {
+html {
+    background-image : url("grey background.jpg") !important;
+  }
+
+.nav {
+    margin: 30px !important;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar-nav {
+    font: grey;
+}
+
+.navbar-nav {
+text-align: right;
+}
+
+.navbar-brand {
+    float: left;
     background-color: #59AAA5;
-    padding: 35px;
     color: white;
-    font-size: 35px;
+    font-size: 55px;
     text-align: center;
     font-family: Georgia;
-}
-h1 {
-    font-family: Georgia;
-    color: #59AAA5;
 }
 
 p {
-    color: grey;
+    text-align: left;
+}
+
+hr {
+    margin-top: 30px !important;
+    margin-bottom: 35px !important;
+    border-top: 2px solid lightgrey !important;
+  }
+
+h2{
+    font-family: Georgia;
+    color: #59AAA5;
+    font-weight: bold;
+}
+
+button {
+    background-color: #59AAA5 !important;
+    color: white !important;
+    border-color:  #59AAA5 !important;
+    border-radius: 0 !important;
+    padding: 5px 35px !important;
 }
 
 .footer {
-    padding: 100 px; 
+    border-top: 10px solid #59AAA5;
+    position: fixed;
     text-align: center;
     color: white;
     background-color: #666666;
+    left: 0;
+    bottom: 0;
     width: 100%;
+    padding: 50px;
 }
