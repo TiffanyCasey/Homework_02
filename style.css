@@ -9,6 +9,12 @@ body{
     background-image : url("grey background.jpg") !important;
   }
 
+.header {
+    border-bottom: 3px solid grey;
+    margin-bottom: 35px;
+    color: white;
+}
+
 h1 {
     float: left;
     background-color: #59AAA5;
@@ -18,19 +24,12 @@ h1 {
     font-family: Georgia;
     margin-left: 10;
     padding: 20px;
- 
 }
 .navbar {
     text-align: right;
     margin-top: 20px;
     color: grey !important;  
     background: white;
-}
-
-.header {
-    border-bottom: 3px solid grey;
-    margin-bottom: 35px;
-    color: white;
 }
 
 #TiffanyPicture {
@@ -80,6 +79,7 @@ footer {
     background-color: #666666;
     left: 0;
     bottom: 0;
-    width: 100%;
     padding: 50px;
+    min-width:100%;
+    max-width:100%;
 }
