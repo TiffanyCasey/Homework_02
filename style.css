@@ -5,7 +5,7 @@
     padding: 0px;
 }
 
-body{
+body {
     background-image : url("grey background.jpg") !important;
   }
 
@@ -13,6 +13,17 @@ body{
     border-bottom: 3px solid grey;
     margin-bottom: 35px;
     color: white;
+}
+
+.row {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
 }
 
 h1 {
@@ -32,6 +43,8 @@ h1 {
     background: white;
 }
 
+
+
 #TiffanyPicture {
     margin: 15px 15px 15px 15px;
     float: left;
@@ -43,6 +56,7 @@ h1 {
 
 .card {
     padding-top: 20px;
+    justify-content: space-evenly;
 }
 
 p {
