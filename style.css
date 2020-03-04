@@ -8,13 +8,16 @@
 }
 
 html {
-    background-image: url("grey\ background.jpg");
+    
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: grey;
   }
 
-/*--Navigation*/
+  body {
+    background-image: url("Assets/grey\ background.jpg");
+}
 
+/*--Navigation*/
 
 .navbar-brand {
     float: left;
@@ -58,7 +61,7 @@ button {
 }
 
 h1 {
-    padding-top: 15px;
+
     font-family: Georgia;
     color: #59AAA5;
     font-weight: bold;
@@ -86,8 +89,9 @@ p {
 }
 
 .card {
-    padding-top: 20px;
-    justify-content: space-evenly;
+padding-top: 0px !important;
+width: 70%;
+margin-top: 20px;
 }
 
 button {
