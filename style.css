@@ -20,6 +20,17 @@ html {
 
 /*--Navigation*/
 
+.header {
+    background: white;
+    
+}
+
+nav {
+    border-bottom: 2px solid lightgrey;
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+  
+}
 
 .navbar-brand {
     float: left;
@@ -28,45 +39,44 @@ html {
     font-size: 40px !important;
     text-align: center !important;
     margin: 0 !important;
-    padding: 20px !important;
+    padding: 25px !important;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-
-.navbar-collapse {
-    list-style: none !important;
-    text-align: center;
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
-.navbar-collapse {
-    padding-right: 0px;
-}
-
-nav {
-    border-bottom: 1px solid lightgrey;
-    padding: 0!important;
-}
-
 .nav-item {
-    font-size: 20px;
-    border-right: 1px solid lightgrey;
+    font-size: 18px;
     list-style: none;
 }
 
-.nav-item:last-child {
-    border-right: none;
+
+.navbar .navbar-expand-lg {
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+
+.navbar-collapse {
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: block!important;
 }
 
 /*--All Main Element Styles*/
 
+.container {
+    margin: 0 auto;
+}
+
 .card {
-    padding-top: 0px !important;
-    padding: 5px;
     margin-top: 30px;
     }
+
+.main {
+    
+}    
 
 h1 {
     font-family: Georgia;
@@ -79,6 +89,8 @@ hr {
     margin-bottom: 35px !important;
     border-top: 2px solid lightgrey !important;
 }
+
+
 
 /*--About Style Elements*/
 
@@ -112,13 +124,18 @@ button {
 
 /*--Portfolio Style Elements*/
 
+.card-img-overlay {
+    padding: 0 auto !important;
+}
 
-h5 {
-    background-color: white;
-    color: #59AAA5;
+.card-title {
+    background-color: #59AAA5;
+    color: white;
     padding: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: auto 0 !important;
+    position: relative;
+    top: 60%;
 }
 
 .Activity {
@@ -148,7 +165,7 @@ h5 {
 
 footer {
     border-top: 10px solid #59AAA5;
-    position: fixed;
+    position: fixed; 
     text-align: center;
     color: white;
     background-color: #666666;
@@ -159,34 +176,20 @@ footer {
     max-width:100%;
 }
 
-/*--Layout Containers-header*/
 
-.container {
-    margin: 0 auto;
+
+
+/*--Media Queries Mobile*/
+@media screen and (max-width: 390px) {
+    .navbar-brand {
+    text-align: center;
+    padding: 0 auto;
+    width: 100%;
+    }
+
+    .navbar-collapse .justify-content-end {
+    text-align: center;
+    padding: 0 auto;
+    width: 100%;
+    }
 }
-
-/*--Media Queries*/
-
-@media only screen and (max-width: 640px) {
-    .navbar-brand {    
-        width: 100%;
-    }
-    
-    .nameLine {
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-        text-align: center;
-    }
-    .div-ul {
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-        text-align: center;
-    }
-    
-    ul {
-        justify-content: center;
-    }
-    
-    }
