@@ -1,5 +1,5 @@
 
-/*--Basic Element Styles*/
+/*--Applies to entire page--*/
 
 * {
     box-sizing: border-box;
@@ -8,10 +8,11 @@
 }
 
 html {
-    
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: grey;
   }
+
+  /*--Background Image--*/
 
   body {
     background-image: url("Assets/grey\ background.jpg");
@@ -43,25 +44,18 @@ nav {
 
 .nav-item:last-child {
     border-right: none;
+    padding-right: 20px;
 }
 
-#navbarNavAltMarkup {
-    background-color: white !important;
-    padding: 27px;
-}
+/*--All Main Element Styles*/
 
-/*--Main Element Styles*/
-
-button {
-    background-color: #59AAA5 !important;
-    color: white !important;
-    border-color:  #59AAA5 !important;
-    border-radius: 0 !important;
-    padding: 5px 35px !important;
-}
+.card {
+    padding-top: 0px !important;
+    padding: 5px;
+    margin-top: 30px;
+    }
 
 h1 {
-
     font-family: Georgia;
     color: #59AAA5;
     font-weight: bold;
@@ -71,13 +65,9 @@ hr {
     margin-top: 30px !important;
     margin-bottom: 35px !important;
     border-top: 2px solid lightgrey !important;
-    width: 90%;
 }
 
-p {
-    color: grey;
-    line-height: 35px;
-}
+/*--About Style Elements*/
 
 #TiffanyPicture {
     margin: 15px 25px 15px 15px;
@@ -88,10 +78,15 @@ p {
     float: left;
 }
 
-.card {
-padding-top: 0px !important;
-width: 70%;
-margin-top: 20px;
+p {
+    color: grey;
+    line-height: 35px;
+}
+
+/*--Contact Style Elements*/
+
+label {
+    color: grey;
 }
 
 button {
@@ -100,6 +95,40 @@ button {
     border-color:  #59AAA5 !important;
     border-radius: 0 !important;
     padding: 5px 35px !important;
+}
+
+/*--Portfolio Style Elements*/
+
+
+h5 {
+    background-color: white;
+    color: #59AAA5;
+    padding: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: auto 0 !important;
+}
+
+.Activity {
+    position: relative !important;
+    text-align: center; 
+    margin-top: 40px;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.column {
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
 }
 
 /*--Footer Styles*/
@@ -112,7 +141,7 @@ footer {
     background-color: #666666;
     left: 0;
     bottom: 0;
-    padding: 50px;
+    padding: 40px;
     min-width:100%;
     max-width:100%;
 }
@@ -120,22 +149,31 @@ footer {
 /*--Layout Containers-header*/
 
 .container {
-    width: 80%;
     margin: 0 auto;
 }
 
 /*--Media Queries*/
 
-
-@media only screen and (min-width: 30cm) {
-    nav {
-        display: flex;
-        justify-content: space-between;
+@media only screen and (max-width: 640px) {
+    .navbar-brand {    
+        width: 100%;
     }
-    nav ul {
-        display: flex;
+    
+    .nameLine {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
     }
-
-.navbar-collapse {
-    flex-basis: 100%;
-}
+    .div-ul {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    
+    ul {
+        justify-content: center;
+    }
+    
+    }
