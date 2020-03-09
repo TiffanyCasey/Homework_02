@@ -1,4 +1,3 @@
-
 /*--Applies to entire page--*/
 
 * {
@@ -12,7 +11,7 @@ html {
     color: grey;
   }
 
-  /*--Background Image--*/
+/*--Background Image--*/
 
   body {
     background-image: url("Assets/grey\ background.jpg");
@@ -22,14 +21,15 @@ html {
 
 .header {
     background: white;
-    
+    position: fixed; 
+    width: 100%; 
+    z-index: 1;
 }
 
 nav {
     border-bottom: 2px solid lightgrey;
     padding-top: 0!important;
     padding-bottom: 0!important;
-  
 }
 
 .navbar-brand {
@@ -46,16 +46,13 @@ nav {
 
 .nav-item {
     font-size: 18px;
-    list-style: none;
+    list-style: none; 
 }
-
 
 .navbar .navbar-expand-lg {
     margin-left: 20px;
     margin-right: 20px;
-
 }
-
 
 .navbar-collapse {
     text-align: center;
@@ -67,15 +64,11 @@ nav {
 /*--All Main Element Styles*/
 
 .container {
-    margin: 0 auto;
+    margin: 0 auto;  
 }
 
-.card {
-    margin-top: 30px;
-    }
-
-.main {
-    
+main {
+    padding-top: 130px;
 }    
 
 h1 {
@@ -89,8 +82,6 @@ hr {
     margin-bottom: 35px !important;
     border-top: 2px solid lightgrey !important;
 }
-
-
 
 /*--About Style Elements*/
 
@@ -128,22 +119,26 @@ button {
     padding: 0 auto !important;
 }
 
-.card-title {
+
+h5 {
     background-color: #59AAA5;
     color: white;
-    padding: 50px;
+    height: 70px; 
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: auto 0 !important;
     position: relative;
     top: 60%;
+}
+
+.card-title {
+    padding-top: 22px; 
 }
 
 .Activity {
     position: relative !important;
     text-align: center; 
     margin-top: 40px;
-}
 
+}
 
 .row {
     display: flex;
@@ -161,7 +156,17 @@ button {
     vertical-align: middle;
 }
 
+/*--Adds padding above footer for smaller screens*/
+
+.push {
+    height: 200px;
+}
+
 /*--Footer Styles*/
+
+main {
+    padding-top: 250px; 
+}
 
 footer {
     border-top: 10px solid #59AAA5;
@@ -176,20 +181,26 @@ footer {
     max-width:100%;
 }
 
-
-
-
-/*--Media Queries Mobile*/
-@media screen and (max-width: 390px) {
+/*--Media Queries XS*/
+@media screen and (max-width: 576px) {
     .navbar-brand {
     text-align: center;
     padding: 0 auto;
     width: 100%;
-    }
+}
+}
 
+/*--Media Queries S*/
+
+@media screen and (max-width: 768px) {
+    .navbar-brand { 
+    text-align: center;
+    padding: 0 auto;
+    width: 100%;
+}
+}
     .navbar-collapse .justify-content-end {
     text-align: center;
     padding: 0 auto;
     width: 100%;
-    }
 }
